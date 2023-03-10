@@ -1,0 +1,58 @@
+{
+    "name": "tripteki/laravelphp-helpers",
+    "version": "1.0.0",
+    "description": "Trip Teknologi's Laravel.php Helpers",
+
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [ { "name": "Trip Teknologi", "email": "tripteki.company@gmail.com" } ],
+    "homepage": "https://github.com/tripteki/laravelphp-helpers",
+    "support": { "issues": "https://github.com/tripteki/laravelphp-helpers/issues" },
+
+    "require": {
+
+        "php": "^8.0.2",
+
+        "tripteki/laravelphp-unique": "^1.0.0"
+    },
+
+    "require-dev": {},
+
+    "suggest": {
+
+        "laravel/lumen-framework": "Required when using lumen framework (^9.0).",
+        "laravel/framework": "Required when using laravel framework (^9.0)."
+    },
+
+    "autoload": {
+
+        "files": [
+
+            "src/Helpers/KeyName.php",
+            "src/Helpers/ForeignKeyName.php",
+            "src/Helpers/IResponse.php"
+        ],
+
+        "psr-4": {
+
+            "Tripteki\\Helpers\\": "src/"
+        }
+    },
+
+    "autoload-dev": {},
+
+    "extra": {
+
+        "laravel": {
+
+            "dont-discover": [],
+
+            "providers": [
+
+                "Tripteki\\Helpers\\Providers\\HelpersServiceProvider"
+            ],
+
+            "aliases": []
+        }
+    }
+}
